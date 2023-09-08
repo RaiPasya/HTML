@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOKO</title>
+    <link rel="stylesheet" href="kasir.css" />
+    <script src="kasir.js"></script>
+  </head>
+  <body>
+    <h2 align="center">TOKO</h2>
+    <table class="utama">
+      <tr>
+        <th style="width: 40px">No</th>
+        <th style="width: 250px">Makanan/Minuman</th>
+        <th style="width: 200px">Harga</th>
+        <th style="width: 225px">Jumlah Pesan</th>
+      </tr>
+      <tr style="height: 50px">
+        <td style="width: auto" class="nomor">1</td>
+        <td style="width: auto">
+          <label class="Menu" id="makanan1">Nasi Goreng Sambal Hijau</label>
+        </td>
+        <td style="width: auto">
+          <input type="number" id="harga1" class="vvv" placeholder="Rp." />
+        </td>
+        <td style="width: auto">
+          <input type="number" id="jumlah1" placeholder="0" class="aaa" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td style="width: auto" class="nomor">2</td>
+        <td style="width: auto">
+          <label class="Menu" id="makanan2">Nasi Goreng Ati Ampela</label>
+        </td>
+        <td style="width: auto">
+          <input type="number" id="harga2" class="vvv" placeholder="Rp." />
+        </td>
+        <td style="width: auto">
+          <input type="number" id="jumlah2" placeholder="0" class="aaa" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td style="width: auto" class="nomor">3</td>
+        <td style="width: auto">
+          <label class="Menu" id="makanan3">Nasi Goreng Sambal Bakar</label>
+        </td>
+        <td style="width: auto">
+          <input type="number" id="harga3" class="vvv" placeholder="Rp." />
+        </td>
+        <td style="width: auto">
+          <input type="number" id="jumlah3" placeholder="0" class="aaa" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td style="width: auto" class="nomor">4</td>
+        <td style="width: auto">
+          <label class="Menu" id="makanan4">Lemon Tea</label>
+        </td>
+        <td style="width: auto">
+          <input type="number" id="harga4" class="vvv" placeholder="Rp." />
+        </td>
+        <td style="width: auto">
+          <input type="number" id="jumlah4" placeholder="0" class="aaa" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td style="width: auto" class="nomor">5</td>
+        <td style="width: auto">
+          <label class="Menu" id="makanan5">Es Teh Manis</label>
+        </td>
+        <td style="width: auto">
+          <input type="number" id="harga5" class="vvv" placeholder="Rp." />
+        </td>
+        <td style="width: auto">
+          <input type="number" id="jumlah5" placeholder="0" class="aaa" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="3" align="right">Jumlah</td>
+        <td><div id="totalHarga" class="ccc"></div></td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="3" align="right">Diskon</td>
+        <td><div id="diskon" class="ccc"></div></td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="3" align="right">Total Pembayaran</td>
+        <td><div id="totalPembayaran" class="ccc"></div></td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="3" align="right">Uang Awal</td>
+        <td><input type="number" id="uangAwal" placeholder="0" class="aaa" /></td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="3" align="right">Uang Kembalian</td>
+        <td><div id="uangKembalian" class="ccc"></div></td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="4">
+          <div class="tombol">
+            <button onclick="Reset()" class="Batal">Batal</button>
+            <button onclick="CetakStruk()" id="cetak" class="Cetak">
+              Cetak Struk
+            </button>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div id="struk" class="struk">
+      <h2>Struk Belanja</h2>
+      <div id="detailStruk"></div>
+    </div>
+  </body>
+</html>

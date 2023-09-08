@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #def874;
+  }
+
+.aaa {
+    background-color: rgb(0, 88, 252);
+    color: aliceblue;
+}
+
+.hasil {
+    background-color: aquamarine;
+    text-align: center;
+}

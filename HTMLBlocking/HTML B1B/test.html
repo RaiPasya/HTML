@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POINT OF SALES</title>
+    <link rel="stylesheet" href="cashier.css" />
+  </head>
+  <body>
+    <table class="main">
+      <tr>
+        <th style="width: 40px px">No</th>
+        <th style="width: 250px">Makanan/Minuman</th>
+        <th style="width: 200px">Harga</th>
+        <th style="width: 225px">Jumlah Pesan</th>
+      </tr>
+      <tr style="height: 50px">
+        <td style="width: auto" class="nomer">1</td>
+        <td style="width: auto">
+          <label class="Menu">Nasi Goreng Sambal Hijau</label>
+        </td>
+        <td style="width: auto">
+          <input type="number" id="kocak" class="vvv" placeholder="Rp." />
+        </td>
+        <td style="width: auto">
+          <input type="number" id="jumlah" placeholder="0" class="aaa" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td style="width: auto" class="nomer">2</td>
+        <td style="width: auto">
+          <label class="Menu">Nasi Goreng Ati Ampela</label>
+        </td>
+        <td style="width: auto">
+          <input type="number" id="kocak" class="vvv" placeholder="Rp." />
+        </td>
+        <td style="width: auto">
+          <input type="number" id="jumlah" placeholder="0" class="aaa" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td style="width: auto" class="nomer">3</td>
+        <td style="width: auto">
+          <label class="Menu">Nasi Goreng Sambal Bakar</label>
+        </td>
+        <td style="width: auto">
+          <input type="number" id="kocak" class="vvv" placeholder="Rp." />
+        </td>
+        <td style="width: auto">
+          <input type="number" id="jumlah" placeholder="0" class="aaa" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td style="width: auto" class="nomer">4</td>
+        <td style="width: auto"><label class="Menu">Lemon Tea</label></td>
+        <td style="width: auto">
+          <input type="number" id="kocak" class="vvv" placeholder="Rp." />
+        </td>
+        <td style="width: auto">
+          <input type="number" id="jumlah" placeholder="0" class="aaa" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td style="width: auto" class="nomer">5</td>
+        <td style="width: auto"><label class="Menu">Es Teh Manis</label></td>
+        <td style="width: auto">
+          <input type="number" id="kocak" class="vvv" placeholder="Rp." />
+        </td>
+        <td style="width: auto">
+          <input type="number" id="jumlah" placeholder="0" class="aaa" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="3" align="right">Jumlah</td>
+        <td><div id="resultJ" class="ccc"></div></td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="3" align="right">Diskon</td>
+        <td><div id="resultD" class="ccc"></div></td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="3" align="right">Total Pembayaran</td>
+        <td><div id="resultT" class="ccc"></div></td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="3" align="right">Uang Awal</td>
+        <td><input type="number" id="uangA" placeholder="0" class="aaa" /></td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="3" align="right">Uang Kembalian</td>
+        <td><div id="resultU" class="ccc"></div></td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="4">
+          <div class="button">
+            <button onclick="Reset()" class="Batal">Batal</button>
+            <button onclick="generateReceiptContent()" id="cetak" class="Cetak">
+              Cetak Struk
+            </button>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <script src="test.js"></script>
+  </body>
+</html>

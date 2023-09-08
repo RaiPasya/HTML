@@ -1,0 +1,65 @@
+.main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  border: 1px solid #8686867c;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: yellow;
+}
+
+table td {
+  border: 1px solid #8686867c;
+  border-collapse: collapse;
+}
+
+.aaa {
+  width: 220px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.ccc {
+  width: 220px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.vvv {
+  width: 220px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cetak,
+.Batal {
+  width: 150px;
+  height: 25px;
+  margin: 10px;
+  color: white;
+}
+
+.Cetak {
+  background-color: blue;
+}
+
+.Batal {
+  background-color: gray;
+}

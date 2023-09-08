@@ -1,0 +1,106 @@
+.main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  border: 1px solid #8686867c;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: yellow;
+}
+
+table td {
+  border: 1px solid #8686867c;
+  border-collapse: collapse;
+}
+
+.aaa {
+  width: 220px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.ccc {
+  width: 220px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.vvv {
+  width: 220px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cetak,
+.Batal {
+  width: 150px;
+  height: 25px;
+  margin: 10px;
+  color: white;
+}
+
+.Cetak {
+  background-color: blue;
+}
+
+.Batal {
+  background-color: gray;
+}
+
+.receipt {
+  display: none;
+  margin: 20px auto;
+  max-width: 400px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.receipt h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.receipt p {
+  margin: 5px 0;
+  text-align: left;
+}
+
+.receipt #receiptDetails {
+  margin-top: 10px;
+}
+
+.receipt .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.receipt .Cetak,
+.receipt .Batal {
+  width: 150px;
+  height: 30px;
+  margin: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

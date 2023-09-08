@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator Pertambahan</title>
+  </head>
+  <body>
+    <h1>Kalkulator Pertambahan</h1>
+    <label for="number1">Angka 1:</label>
+    <input type="number" id="number1" />
+    <br />
+    <label for="number2">Angka 2:</label>
+    <input type="number" id="number2" />
+    <br />
+    <button onclick="hitungPertambahan()">Hitung</button>
+
+    <p>Hasil: <span id="hasil"></span></p>
+
+    <button onclick="printHasil()">Cetak Hasil</button>
+
+    <script>
+      function hitungPertambahan() {
+        var angka1 = parseFloat(document.getElementById("number1").value);
+        var angka2 = parseFloat(document.getElementById("number2").value);
+
+        var hasil = angka1 + angka2;
+        document.getElementById("hasil").innerText = hasil;
+      }
+
+      function printHasil() {
+        var hasil = document.
+        getElementById("hasil").innerText;
+        window.print();
+        // Tambahkan hasil ke elemen lain untuk mencetak hasil di dalam dokumen
+        var hasilCetak = document.createElement("p");
+        hasilCetak.innerText = "Hasil: " + hasil;
+        document.body.appendChild(hasilCetak);
+      }
+    </script>
+  </body>
+</html>
